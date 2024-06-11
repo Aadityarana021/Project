@@ -1,0 +1,42 @@
+Environment Setup and Running the Chatbot
+Prerequisites
+Ensure you have the following prerequisites before starting the setup:
+
+Python 3.8 or higher
+Anaconda or any other virtual environment manager
+Internet access for API calls
+gemini-api key from Google
+Installation Steps
+Clone the Repository:
+First, you need to clone the repository from GitHub. Open your terminal and run the following commands:
+
+
+Create and Activate Virtual Environment:
+Use Anaconda to create and activate a virtual environment:
+
+sh
+conda create -n rag_chatbot python=3.8
+conda activate rag_chatbot
+Install Dependencies:
+Install the required Python packages listed in the requirements.txt file:
+
+sh
+pip install -r requirements.txt
+Set Up Environment Variables:
+Create a .env file in the project root directory and add your GEMINI_API_KEY:
+
+env
+GEMINI_API_KEY=your_gemini_api_key
+Running the Chatbot
+Run the Streamlit Application:
+Start the Streamlit application by running the following command in your terminal:
+
+sh
+streamlit run app.py
+
+Upload PDFs:
+Use the sidebar to upload one or multiple PDF files through the Streamlit interface.
+Ask Questions:
+
+Type your question in the provided text input field.
+The chatbot will retrieve the most relevant text passages and generate an answer using the Gemini API.
